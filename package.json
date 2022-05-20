@@ -1,0 +1,26 @@
+{
+  "name": "twpub-tools",
+  "version": "0.1.0",
+  "description": "Tools for working with TWPUBs",
+  "main": "index.js",
+  "author": "",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "css": "^3.0.0",
+    "jszip": "^3.7.1",
+    "node-fetch": "^2.6.7",
+    "puppeteer": "^8.0.0",
+    "tiddlywiki": "github:Jermolene/TiddlyWiki5#dynannotate-improvements",
+    "xmldom": "^0.5.0"
+  },
+  "scripts": {
+    "test": "node epub2twpub/test.js",
+    "start": "npx tiddlywiki --version && npm run build && npx http-server ./output",
+    "quick-start": "npx tiddlywiki ++plugins/twpub-tools/ ./wikis/twpub-tools.org/ --output ./output --rendertiddler  $:/core/save/all index.html text/plain && npx http-server ./output",
+    "build": "./bin/slice-epubs.sh ./epubs/library ./tmp/twpubs && node ./bin/make-twpub-library.js ./tmp/twpubs ./output/library && ./bin/build-wiki.sh ./output",
+    "download-gutenberg": "node bin/download-gutenberg-top-100.js",
+    "build-gutenberg": "./bin/slice-epubs.sh ./epubs/gutenberg100 ./tmp/twpubs && find ./tmp/twpubs -size +99M -delete",
+    "slice-and-stitch-wiki": "./bin/slice-and-stitch-wiki.sh ./epubs/library/Great\\ Expectations.epub ./tmp/index.html",
+    "clean": "./bin/clean.sh"
+  }
+}

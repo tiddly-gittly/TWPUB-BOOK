@@ -1,0 +1,10 @@
+title: $:/plugins/immateriel/twpub-tools/SelectionTrackerActions
+code-body: yes
+
+<$action-log message="In SelectionTrackerActions" selection=<<selection>>/>
+<$action-log/>
+<$action-createtiddler $basetitle="$:/state/SelectionTracker">
+	<$action-setfield $tiddler=<<createTiddler-title>> text=<<selection>> type="application/json"/>
+	<$action-popup $state=<<dom-data-selection-popup-title>> $coords=<<tv-selection-coords>> $floating="yes"/>
+	<$action-setfield $tiddler=<<dom-data-selection-popup-title>> selection-tracker=<<createTiddler-title>>/>
+</$action-createtiddler>

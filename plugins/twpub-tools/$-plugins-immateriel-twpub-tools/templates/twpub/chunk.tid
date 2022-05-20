@@ -1,0 +1,9 @@
+title: $:/plugins/immateriel/twpub-tools/templates/twpub/chunk
+code-body: yes
+
+\whitespace trim
+<a id=<<currentTiddler>> class={{{ [[dynannotate-chunk]] [<currentTiddler>is[tiddler]then[twpub-chunk-selected]] +[join[ ]] }}}>
+	<div class="twpub-chunk-content">
+		<$transclude mode="inline"/>
+	</div>
+</a>
