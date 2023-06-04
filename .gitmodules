@@ -1,0 +1,3 @@
+[submodule "Epub2twpub"]
+	path = Epub2twpub
+	url = https://github.com/tiddly-gittly/Epub2twpub.git
