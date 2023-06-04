@@ -1,4 +1,4 @@
-# 墨屉社区书库（EPUB）
+# TiddlyWiki中文书库（EPUB）
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28bdb46a-d3bb-44e4-a285-3be5f6de833a/deploy-status)](https://app.netlify.com/sites/twpub-book/deploys)
 
@@ -6,18 +6,13 @@
 2. 使用方法请查看书库主页：https://twpub-book.netlify.app/
 3. 联系方式，我的邮箱：whitefall76@outlook.com
 
-收录转换好的TiddlyWiki\墨屉格式的电子书（TWPUB）与EPUB电子书。
-
-仅个人学习之用（本仓库不会删除，欢迎大家上传分享twpub图书，提交请求🙂！ 喜欢记得点小星星哦(*╹▽╹*)这是对我的鼓励，谢谢。爱你们！）也可以留下GitHub用户名或者电子邮件索要管理访问权限以便可以直接拖放添加书籍，无需fork或者PR请求。申请管理访问权限请提交issue。
-
-> 禁止上传违禁图书（尤其是人文类），简单检验方式为直接搜索豆瓣，有条目的基本没问题。
+收录转换好的TiddlyWiki格式电子书（TWPUB）
 
 
 
 ## 目录介绍
 
 - TWpubs：twpub格式电子书
-- Epubs：epub格式电子书
 - [other/Tiddlywiki英文手册](other/The_Book_of_tiddlywiki_Advanced_Customization.pdf)：英文版tiddlywiki使用说明，内容非常全面。
 - [other/TiddlyWiki谷歌用户组讨论历史数据](other/TiddlyWiki_google_group.html)：历史谷歌用户组的讨论数据，tiddlywiki大部分问题在过去已经被解决过。
 
