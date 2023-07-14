@@ -18,7 +18,7 @@
 
 ## 维护（Owner）
 
-更新子模块：`git pull --recurse-submodules`
+更新子模块：`git submodule update --remote`
 
 ## 相关链接
 
